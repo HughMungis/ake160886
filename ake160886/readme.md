@@ -1,6 +1,5 @@
 # ake160886
-
-![ake160886](imgur.com image replace me!)
+For use with the QMK keyboard toolset as well as a Teensy2.0 microcontroller
 
 A short description of the keyboard/project
 
