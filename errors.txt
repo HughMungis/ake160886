@@ -1,16 +1,1153 @@
+root@kali:~/qmk_firmware/keyboards/ake160886# qmk compile -kb ake160886 -km default
+Ψ Compiling keymap with make ake160886:default
 
 
 QMK Firmware 0.9.12
-Making [1make160886[0m with keymap [1mdefault[0m
+Making ake160886 with keymap default
 
 avr-gcc (GCC) 5.4.0
 Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Compiling: keyboards/ake160886/ake160886.c                                                          [31;01m[ERRORS][0m
+Compiling: keyboards/ake160886/ake160886.c                                                         In file included from keyboards/ake160886/ake160886.c:17:0:
+keyboards/ake160886/ake160886.h:33:149: error: missing ')' in macro parameter list
+keyboards/ake160886/ake160886.h:34:1: error: data definition has no type or storage class [-Werror]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+ ^
+keyboards/ake160886/ake160886.h:34:1: error: type defaults to ‘int’ in declaration of ‘K25’ [-Werror=implicit-int]
+keyboards/ake160886/ake160886.h:34:7: error: type defaults to ‘int’ in declaration of ‘K26’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+       ^
+keyboards/ake160886/ake160886.h:34:13: error: type defaults to ‘int’ in declaration of ‘K27’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+             ^
+keyboards/ake160886/ake160886.h:34:19: error: type defaults to ‘int’ in declaration of ‘K28’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                   ^
+keyboards/ake160886/ake160886.h:34:25: error: type defaults to ‘int’ in declaration of ‘K29’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                         ^
+keyboards/ake160886/ake160886.h:34:31: error: type defaults to ‘int’ in declaration of ‘K30’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                               ^
+keyboards/ake160886/ake160886.h:34:37: error: type defaults to ‘int’ in declaration of ‘K31’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                     ^
+keyboards/ake160886/ake160886.h:34:43: error: type defaults to ‘int’ in declaration of ‘K32’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                           ^
+keyboards/ake160886/ake160886.h:34:49: error: type defaults to ‘int’ in declaration of ‘K33’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                 ^
+keyboards/ake160886/ake160886.h:34:55: error: type defaults to ‘int’ in declaration of ‘K34’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                       ^
+keyboards/ake160886/ake160886.h:34:61: error: type defaults to ‘int’ in declaration of ‘K35’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                             ^
+keyboards/ake160886/ake160886.h:34:67: error: type defaults to ‘int’ in declaration of ‘K36’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                   ^
+keyboards/ake160886/ake160886.h:34:73: error: type defaults to ‘int’ in declaration of ‘K37’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                         ^
+keyboards/ake160886/ake160886.h:34:79: error: type defaults to ‘int’ in declaration of ‘K38’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                               ^
+keyboards/ake160886/ake160886.h:34:85: error: type defaults to ‘int’ in declaration of ‘K39’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:34:91: error: type defaults to ‘int’ in declaration of ‘K40’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:34:97: error: type defaults to ‘int’ in declaration of ‘K41’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:34:103: error: type defaults to ‘int’ in declaration of ‘K42’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:34:109: error: type defaults to ‘int’ in declaration of ‘K43’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:34:115: error: type defaults to ‘int’ in declaration of ‘K44’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:34:121: error: type defaults to ‘int’ in declaration of ‘K45’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:34:127: error: type defaults to ‘int’ in declaration of ‘K46’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:34:133: error: type defaults to ‘int’ in declaration of ‘K47’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:34:139: error: type defaults to ‘int’ in declaration of ‘K48’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:34:145: error: type defaults to ‘int’ in declaration of ‘K49’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:35:1: error: type defaults to ‘int’ in declaration of ‘K50’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+ ^
+keyboards/ake160886/ake160886.h:35:7: error: type defaults to ‘int’ in declaration of ‘K51’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+       ^
+keyboards/ake160886/ake160886.h:35:13: error: type defaults to ‘int’ in declaration of ‘K52’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+             ^
+keyboards/ake160886/ake160886.h:35:19: error: type defaults to ‘int’ in declaration of ‘K53’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                   ^
+keyboards/ake160886/ake160886.h:35:25: error: type defaults to ‘int’ in declaration of ‘K54’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                         ^
+keyboards/ake160886/ake160886.h:35:31: error: type defaults to ‘int’ in declaration of ‘K55’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                               ^
+keyboards/ake160886/ake160886.h:35:43: error: type defaults to ‘int’ in declaration of ‘K56’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                           ^
+keyboards/ake160886/ake160886.h:35:55: error: type defaults to ‘int’ in declaration of ‘K57’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                       ^
+keyboards/ake160886/ake160886.h:35:67: error: type defaults to ‘int’ in declaration of ‘K58’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                   ^
+keyboards/ake160886/ake160886.h:35:73: error: type defaults to ‘int’ in declaration of ‘K59’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                         ^
+keyboards/ake160886/ake160886.h:35:79: error: type defaults to ‘int’ in declaration of ‘K60’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                               ^
+keyboards/ake160886/ake160886.h:35:85: error: type defaults to ‘int’ in declaration of ‘K61’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:35:91: error: type defaults to ‘int’ in declaration of ‘K62’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:35:103: error: type defaults to ‘int’ in declaration of ‘K63’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:35:109: error: type defaults to ‘int’ in declaration of ‘K64’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:35:115: error: type defaults to ‘int’ in declaration of ‘K65’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:35:127: error: type defaults to ‘int’ in declaration of ‘K66’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:35:133: error: type defaults to ‘int’ in declaration of ‘K67’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:35:139: error: type defaults to ‘int’ in declaration of ‘K68’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:35:145: error: type defaults to ‘int’ in declaration of ‘K69’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:36:1: error: type defaults to ‘int’ in declaration of ‘K70’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+ ^
+keyboards/ake160886/ake160886.h:36:7: error: type defaults to ‘int’ in declaration of ‘K71’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+       ^
+keyboards/ake160886/ake160886.h:36:13: error: type defaults to ‘int’ in declaration of ‘K72’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+             ^
+keyboards/ake160886/ake160886.h:36:19: error: type defaults to ‘int’ in declaration of ‘K73’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                   ^
+keyboards/ake160886/ake160886.h:36:25: error: type defaults to ‘int’ in declaration of ‘K74’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                         ^
+keyboards/ake160886/ake160886.h:36:31: error: type defaults to ‘int’ in declaration of ‘K75’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                               ^
+keyboards/ake160886/ake160886.h:36:37: error: type defaults to ‘int’ in declaration of ‘K76’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                     ^
+keyboards/ake160886/ake160886.h:36:43: error: type defaults to ‘int’ in declaration of ‘K77’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                           ^
+keyboards/ake160886/ake160886.h:36:49: error: type defaults to ‘int’ in declaration of ‘K78’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                 ^
+keyboards/ake160886/ake160886.h:36:55: error: type defaults to ‘int’ in declaration of ‘K79’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                       ^
+keyboards/ake160886/ake160886.h:36:61: error: type defaults to ‘int’ in declaration of ‘K80’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                             ^
+keyboards/ake160886/ake160886.h:36:67: error: type defaults to ‘int’ in declaration of ‘K81’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                   ^
+keyboards/ake160886/ake160886.h:36:73: error: type defaults to ‘int’ in declaration of ‘K82’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                         ^
+keyboards/ake160886/ake160886.h:36:79: error: type defaults to ‘int’ in declaration of ‘K83’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                               ^
+keyboards/ake160886/ake160886.h:36:85: error: type defaults to ‘int’ in declaration of ‘K84’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:36:91: error: type defaults to ‘int’ in declaration of ‘K85’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:36:97: error: type defaults to ‘int’ in declaration of ‘K86’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:36:103: error: type defaults to ‘int’ in declaration of ‘K87’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:36:109: error: type defaults to ‘int’ in declaration of ‘K88’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:36:115: error: type defaults to ‘int’ in declaration of ‘K89’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:36:121: error: type defaults to ‘int’ in declaration of ‘K90’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:36:127: error: type defaults to ‘int’ in declaration of ‘K91’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:36:133: error: type defaults to ‘int’ in declaration of ‘K92’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:36:139: error: type defaults to ‘int’ in declaration of ‘K93’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:36:145: error: type defaults to ‘int’ in declaration of ‘K94’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:37:1: error: type defaults to ‘int’ in declaration of ‘K95’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+ ^
+keyboards/ake160886/ake160886.h:37:7: error: type defaults to ‘int’ in declaration of ‘K96’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+       ^
+keyboards/ake160886/ake160886.h:37:13: error: type defaults to ‘int’ in declaration of ‘K97’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+             ^
+keyboards/ake160886/ake160886.h:37:19: error: type defaults to ‘int’ in declaration of ‘K98’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                   ^
+keyboards/ake160886/ake160886.h:37:25: error: type defaults to ‘int’ in declaration of ‘K99’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                         ^
+keyboards/ake160886/ake160886.h:37:31: error: type defaults to ‘int’ in declaration of ‘K100’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                               ^
+keyboards/ake160886/ake160886.h:37:37: error: type defaults to ‘int’ in declaration of ‘K101’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                     ^
+keyboards/ake160886/ake160886.h:37:43: error: type defaults to ‘int’ in declaration of ‘K102’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                           ^
+keyboards/ake160886/ake160886.h:37:49: error: type defaults to ‘int’ in declaration of ‘K103’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                 ^
+keyboards/ake160886/ake160886.h:37:55: error: type defaults to ‘int’ in declaration of ‘K104’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                       ^
+keyboards/ake160886/ake160886.h:37:61: error: type defaults to ‘int’ in declaration of ‘K105’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                             ^
+keyboards/ake160886/ake160886.h:37:67: error: type defaults to ‘int’ in declaration of ‘K106’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                   ^
+keyboards/ake160886/ake160886.h:37:73: error: type defaults to ‘int’ in declaration of ‘K107’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                         ^
+keyboards/ake160886/ake160886.h:37:79: error: type defaults to ‘int’ in declaration of ‘K108’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                               ^
+keyboards/ake160886/ake160886.h:37:85: error: type defaults to ‘int’ in declaration of ‘K109’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:37:91: error: type defaults to ‘int’ in declaration of ‘K110’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:37:97: error: type defaults to ‘int’ in declaration of ‘K111’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:37:103: error: type defaults to ‘int’ in declaration of ‘K112’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:37:109: error: type defaults to ‘int’ in declaration of ‘K113’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:37:115: error: type defaults to ‘int’ in declaration of ‘K114’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:37:121: error: type defaults to ‘int’ in declaration of ‘K115’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:37:127: error: type defaults to ‘int’ in declaration of ‘K116’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:37:133: error: type defaults to ‘int’ in declaration of ‘K117’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:37:139: error: type defaults to ‘int’ in declaration of ‘K118’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:37:145: error: type defaults to ‘int’ in declaration of ‘K119’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:38:1: error: type defaults to ‘int’ in declaration of ‘K120’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+ ^
+keyboards/ake160886/ake160886.h:38:7: error: type defaults to ‘int’ in declaration of ‘K121’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+       ^
+keyboards/ake160886/ake160886.h:38:13: error: type defaults to ‘int’ in declaration of ‘K122’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+             ^
+keyboards/ake160886/ake160886.h:38:19: error: type defaults to ‘int’ in declaration of ‘K123’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                   ^
+keyboards/ake160886/ake160886.h:38:25: error: type defaults to ‘int’ in declaration of ‘K124’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                         ^
+keyboards/ake160886/ake160886.h:38:31: error: type defaults to ‘int’ in declaration of ‘K125’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                               ^
+keyboards/ake160886/ake160886.h:38:37: error: type defaults to ‘int’ in declaration of ‘K126’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                     ^
+keyboards/ake160886/ake160886.h:38:43: error: type defaults to ‘int’ in declaration of ‘K127’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                           ^
+keyboards/ake160886/ake160886.h:38:49: error: type defaults to ‘int’ in declaration of ‘K128’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                 ^
+keyboards/ake160886/ake160886.h:38:55: error: type defaults to ‘int’ in declaration of ‘K129’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                       ^
+keyboards/ake160886/ake160886.h:38:61: error: type defaults to ‘int’ in declaration of ‘K130’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                             ^
+keyboards/ake160886/ake160886.h:38:67: error: type defaults to ‘int’ in declaration of ‘K131’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                   ^
+keyboards/ake160886/ake160886.h:38:73: error: type defaults to ‘int’ in declaration of ‘K132’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                         ^
+keyboards/ake160886/ake160886.h:38:79: error: type defaults to ‘int’ in declaration of ‘K133’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                               ^
+keyboards/ake160886/ake160886.h:38:85: error: type defaults to ‘int’ in declaration of ‘K134’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:38:91: error: type defaults to ‘int’ in declaration of ‘K135’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:38:97: error: type defaults to ‘int’ in declaration of ‘K136’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:38:103: error: type defaults to ‘int’ in declaration of ‘K137’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:38:109: error: type defaults to ‘int’ in declaration of ‘K138’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:38:115: error: type defaults to ‘int’ in declaration of ‘K139’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:38:121: error: type defaults to ‘int’ in declaration of ‘K140’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:38:127: error: type defaults to ‘int’ in declaration of ‘K141’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:38:133: error: type defaults to ‘int’ in declaration of ‘K142’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:38:139: error: type defaults to ‘int’ in declaration of ‘K143’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:38:145: error: type defaults to ‘int’ in declaration of ‘K144’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:39:1: error: type defaults to ‘int’ in declaration of ‘K145’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+ ^
+keyboards/ake160886/ake160886.h:39:13: error: type defaults to ‘int’ in declaration of ‘K146’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+             ^
+keyboards/ake160886/ake160886.h:39:19: error: type defaults to ‘int’ in declaration of ‘K147’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                   ^
+keyboards/ake160886/ake160886.h:39:25: error: type defaults to ‘int’ in declaration of ‘K148’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                         ^
+keyboards/ake160886/ake160886.h:39:31: error: type defaults to ‘int’ in declaration of ‘K149’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                               ^
+keyboards/ake160886/ake160886.h:39:43: error: type defaults to ‘int’ in declaration of ‘K150’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                           ^
+keyboards/ake160886/ake160886.h:39:61: error: type defaults to ‘int’ in declaration of ‘K151’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                             ^
+keyboards/ake160886/ake160886.h:39:79: error: type defaults to ‘int’ in declaration of ‘K152’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                               ^
+keyboards/ake160886/ake160886.h:39:91: error: type defaults to ‘int’ in declaration of ‘K153’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                           ^
+keyboards/ake160886/ake160886.h:39:97: error: type defaults to ‘int’ in declaration of ‘K154’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:39:103: error: type defaults to ‘int’ in declaration of ‘K155’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:39:109: error: type defaults to ‘int’ in declaration of ‘K156’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:39:115: error: type defaults to ‘int’ in declaration of ‘K157’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:39:127: error: type defaults to ‘int’ in declaration of ‘K158’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:39:133: error: type defaults to ‘int’ in declaration of ‘K159’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:40:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+ ) { \
+ ^
+keyboards/ake160886/ake160886.c:59:9: error: implicit declaration of function ‘LAYOUT’ [-Werror=implicit-function-declaration]
+   [0] = LAYOUT( \
+         ^
+keyboards/ake160886/ake160886.c:60:5: error: ‘NO’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+     ^
+keyboards/ake160886/ake160886.c:63:35: error: ‘ESC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         BKSP, NO,   NO,         NO,   NO,   NO,   NO, 
+                                   ^
+keyboards/ake160886/ake160886.c:63:107: error: ‘BKSP’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         BKSP, NO,   NO,         NO,   NO,   NO,   NO, 
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:64:35: error: ‘TAB’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                   ^
+keyboards/ake160886/ake160886.c:64:41: error: ‘Q’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                         ^
+keyboards/ake160886/ake160886.c:64:47: error: ‘W’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                               ^
+keyboards/ake160886/ake160886.c:64:53: error: ‘E’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                     ^
+keyboards/ake160886/ake160886.c:64:59: error: ‘R’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                           ^
+keyboards/ake160886/ake160886.c:64:65: error: ‘T’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                 ^
+keyboards/ake160886/ake160886.c:64:71: error: ‘Y’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                       ^
+keyboards/ake160886/ake160886.c:64:77: error: ‘U’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                             ^
+keyboards/ake160886/ake160886.c:64:83: error: ‘I’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                   ^
+keyboards/ake160886/ake160886.c:64:89: error: ‘O’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                         ^
+keyboards/ake160886/ake160886.c:64:95: error: ‘P’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                               ^
+keyboards/ake160886/ake160886.c:64:101: error: ‘LBRC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:64:107: error: ‘RBRC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:65:35: error: ‘CAPS’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                   ^
+keyboards/ake160886/ake160886.c:65:41: error: ‘A’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                         ^
+keyboards/ake160886/ake160886.c:65:47: error: ‘S’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                               ^
+keyboards/ake160886/ake160886.c:65:53: error: ‘D’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                     ^
+keyboards/ake160886/ake160886.c:65:59: error: ‘F’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                           ^
+keyboards/ake160886/ake160886.c:65:65: error: ‘G’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                 ^
+keyboards/ake160886/ake160886.c:65:71: error: ‘H’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                       ^
+keyboards/ake160886/ake160886.c:65:77: error: ‘J’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                             ^
+keyboards/ake160886/ake160886.c:65:83: error: ‘K’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                   ^
+keyboards/ake160886/ake160886.c:65:89: error: ‘L’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                         ^
+keyboards/ake160886/ake160886.c:65:95: error: ‘SCLN’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                               ^
+keyboards/ake160886/ake160886.c:65:101: error: ‘QUOT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:65:113: error: ‘ENT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                                 ^
+keyboards/ake160886/ake160886.c:66:35: error: ‘LSFT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                   ^
+keyboards/ake160886/ake160886.c:66:47: error: ‘Z’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                               ^
+keyboards/ake160886/ake160886.c:66:53: error: ‘X’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                     ^
+keyboards/ake160886/ake160886.c:66:59: error: ‘C’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                           ^
+keyboards/ake160886/ake160886.c:66:65: error: ‘V’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                 ^
+keyboards/ake160886/ake160886.c:66:71: error: ‘B’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                       ^
+keyboards/ake160886/ake160886.c:66:77: error: ‘N’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                             ^
+keyboards/ake160886/ake160886.c:66:83: error: ‘M’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                   ^
+keyboards/ake160886/ake160886.c:66:89: error: ‘COMM’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                         ^
+keyboards/ake160886/ake160886.c:66:95: error: ‘DOT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                               ^
+keyboards/ake160886/ake160886.c:66:101: error: ‘SLSH’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:66:113: error: ‘RSFT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                                 ^
+keyboards/ake160886/ake160886.c:67:35: error: ‘LCTL’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                   ^
+keyboards/ake160886/ake160886.c:67:41: error: ‘LWIN’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                         ^
+keyboards/ake160886/ake160886.c:67:59: error: ‘LALT’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                           ^
+keyboards/ake160886/ake160886.c:67:77: error: ‘SPC’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                             ^
+keyboards/ake160886/ake160886.c:67:89: error: ‘RALT’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                         ^
+keyboards/ake160886/ake160886.c:67:101: error: ‘APP’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:67:107: error: ‘RCTL’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:68:4: error: expected ‘}’ before ‘;’ token
+   );
+    ^
+keyboards/ake160886/ake160886.c:69:1: error: expected ‘,’ or ‘;’ at end of input
+ }
+ ^
+cc1: all warnings being treated as errors
+ [ERRORS]
  | 
  | 
  | 
-[31;01mMake finished with errors
-[0m
+make[1]: *** [tmk_core/rules.mk:386: .build/obj_ake160886_default/keyboards/ake160886/ake160886.o] Error 1
+make: *** [Makefile:584: ake160886:default] Error 1
+Make finished with errors
+root@kali:~/qmk_firmware/keyboards/ake160886# qmk compile -kb ake160886 -km default > errors.txt
+Ψ Compiling keymap with make ake160886:default
+In file included from keyboards/ake160886/ake160886.c:17:0:
+keyboards/ake160886/ake160886.h:33:149: error: missing ')' in macro parameter list
+keyboards/ake160886/ake160886.h:34:1: error: data definition has no type or storage class [-Werror]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+ ^
+keyboards/ake160886/ake160886.h:34:1: error: type defaults to ‘int’ in declaration of ‘K25’ [-Werror=implicit-int]
+keyboards/ake160886/ake160886.h:34:7: error: type defaults to ‘int’ in declaration of ‘K26’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+       ^
+keyboards/ake160886/ake160886.h:34:13: error: type defaults to ‘int’ in declaration of ‘K27’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+             ^
+keyboards/ake160886/ake160886.h:34:19: error: type defaults to ‘int’ in declaration of ‘K28’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                   ^
+keyboards/ake160886/ake160886.h:34:25: error: type defaults to ‘int’ in declaration of ‘K29’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                         ^
+keyboards/ake160886/ake160886.h:34:31: error: type defaults to ‘int’ in declaration of ‘K30’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                               ^
+keyboards/ake160886/ake160886.h:34:37: error: type defaults to ‘int’ in declaration of ‘K31’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                     ^
+keyboards/ake160886/ake160886.h:34:43: error: type defaults to ‘int’ in declaration of ‘K32’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                           ^
+keyboards/ake160886/ake160886.h:34:49: error: type defaults to ‘int’ in declaration of ‘K33’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                 ^
+keyboards/ake160886/ake160886.h:34:55: error: type defaults to ‘int’ in declaration of ‘K34’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                       ^
+keyboards/ake160886/ake160886.h:34:61: error: type defaults to ‘int’ in declaration of ‘K35’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                             ^
+keyboards/ake160886/ake160886.h:34:67: error: type defaults to ‘int’ in declaration of ‘K36’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                   ^
+keyboards/ake160886/ake160886.h:34:73: error: type defaults to ‘int’ in declaration of ‘K37’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                         ^
+keyboards/ake160886/ake160886.h:34:79: error: type defaults to ‘int’ in declaration of ‘K38’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                               ^
+keyboards/ake160886/ake160886.h:34:85: error: type defaults to ‘int’ in declaration of ‘K39’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:34:91: error: type defaults to ‘int’ in declaration of ‘K40’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:34:97: error: type defaults to ‘int’ in declaration of ‘K41’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:34:103: error: type defaults to ‘int’ in declaration of ‘K42’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:34:109: error: type defaults to ‘int’ in declaration of ‘K43’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:34:115: error: type defaults to ‘int’ in declaration of ‘K44’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:34:121: error: type defaults to ‘int’ in declaration of ‘K45’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:34:127: error: type defaults to ‘int’ in declaration of ‘K46’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:34:133: error: type defaults to ‘int’ in declaration of ‘K47’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:34:139: error: type defaults to ‘int’ in declaration of ‘K48’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:34:145: error: type defaults to ‘int’ in declaration of ‘K49’ [-Werror=implicit-int]
+ K25,  K26,  K27,  K28,  K29,  K30,  K31,  K32,  K33,  K34,  K35,  K36,  K37,  K38,  K39,  K40,  K41,  K42,  K43,  K44,  K45,  K46,  K47,  K48,  K49,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:35:1: error: type defaults to ‘int’ in declaration of ‘K50’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+ ^
+keyboards/ake160886/ake160886.h:35:7: error: type defaults to ‘int’ in declaration of ‘K51’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+       ^
+keyboards/ake160886/ake160886.h:35:13: error: type defaults to ‘int’ in declaration of ‘K52’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+             ^
+keyboards/ake160886/ake160886.h:35:19: error: type defaults to ‘int’ in declaration of ‘K53’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                   ^
+keyboards/ake160886/ake160886.h:35:25: error: type defaults to ‘int’ in declaration of ‘K54’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                         ^
+keyboards/ake160886/ake160886.h:35:31: error: type defaults to ‘int’ in declaration of ‘K55’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                               ^
+keyboards/ake160886/ake160886.h:35:43: error: type defaults to ‘int’ in declaration of ‘K56’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                           ^
+keyboards/ake160886/ake160886.h:35:55: error: type defaults to ‘int’ in declaration of ‘K57’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                       ^
+keyboards/ake160886/ake160886.h:35:67: error: type defaults to ‘int’ in declaration of ‘K58’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                   ^
+keyboards/ake160886/ake160886.h:35:73: error: type defaults to ‘int’ in declaration of ‘K59’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                         ^
+keyboards/ake160886/ake160886.h:35:79: error: type defaults to ‘int’ in declaration of ‘K60’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                               ^
+keyboards/ake160886/ake160886.h:35:85: error: type defaults to ‘int’ in declaration of ‘K61’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:35:91: error: type defaults to ‘int’ in declaration of ‘K62’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:35:103: error: type defaults to ‘int’ in declaration of ‘K63’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:35:109: error: type defaults to ‘int’ in declaration of ‘K64’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:35:115: error: type defaults to ‘int’ in declaration of ‘K65’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:35:127: error: type defaults to ‘int’ in declaration of ‘K66’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:35:133: error: type defaults to ‘int’ in declaration of ‘K67’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:35:139: error: type defaults to ‘int’ in declaration of ‘K68’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:35:145: error: type defaults to ‘int’ in declaration of ‘K69’ [-Werror=implicit-int]
+ K50,  K51,  K52,  K53,  K54,  K55,        K56,        K57,        K58,  K59,  K60,  K61,  K62,        K63,  K64,  K65,        K66,  K67,  K68,  K69,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:36:1: error: type defaults to ‘int’ in declaration of ‘K70’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+ ^
+keyboards/ake160886/ake160886.h:36:7: error: type defaults to ‘int’ in declaration of ‘K71’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+       ^
+keyboards/ake160886/ake160886.h:36:13: error: type defaults to ‘int’ in declaration of ‘K72’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+             ^
+keyboards/ake160886/ake160886.h:36:19: error: type defaults to ‘int’ in declaration of ‘K73’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                   ^
+keyboards/ake160886/ake160886.h:36:25: error: type defaults to ‘int’ in declaration of ‘K74’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                         ^
+keyboards/ake160886/ake160886.h:36:31: error: type defaults to ‘int’ in declaration of ‘K75’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                               ^
+keyboards/ake160886/ake160886.h:36:37: error: type defaults to ‘int’ in declaration of ‘K76’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                     ^
+keyboards/ake160886/ake160886.h:36:43: error: type defaults to ‘int’ in declaration of ‘K77’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                           ^
+keyboards/ake160886/ake160886.h:36:49: error: type defaults to ‘int’ in declaration of ‘K78’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                 ^
+keyboards/ake160886/ake160886.h:36:55: error: type defaults to ‘int’ in declaration of ‘K79’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                       ^
+keyboards/ake160886/ake160886.h:36:61: error: type defaults to ‘int’ in declaration of ‘K80’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                             ^
+keyboards/ake160886/ake160886.h:36:67: error: type defaults to ‘int’ in declaration of ‘K81’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                   ^
+keyboards/ake160886/ake160886.h:36:73: error: type defaults to ‘int’ in declaration of ‘K82’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                         ^
+keyboards/ake160886/ake160886.h:36:79: error: type defaults to ‘int’ in declaration of ‘K83’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                               ^
+keyboards/ake160886/ake160886.h:36:85: error: type defaults to ‘int’ in declaration of ‘K84’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:36:91: error: type defaults to ‘int’ in declaration of ‘K85’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:36:97: error: type defaults to ‘int’ in declaration of ‘K86’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:36:103: error: type defaults to ‘int’ in declaration of ‘K87’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:36:109: error: type defaults to ‘int’ in declaration of ‘K88’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:36:115: error: type defaults to ‘int’ in declaration of ‘K89’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:36:121: error: type defaults to ‘int’ in declaration of ‘K90’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:36:127: error: type defaults to ‘int’ in declaration of ‘K91’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:36:133: error: type defaults to ‘int’ in declaration of ‘K92’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:36:139: error: type defaults to ‘int’ in declaration of ‘K93’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:36:145: error: type defaults to ‘int’ in declaration of ‘K94’ [-Werror=implicit-int]
+ K70,  K71,  K72,  K73,  K74,  K75,  K76,  K77,  K78,  K79,  K80,  K81,  K82,  K83,  K84,  K85,  K86,  K87,  K88,  K89,  K90,  K91,  K92,  K93,  K94,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:37:1: error: type defaults to ‘int’ in declaration of ‘K95’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+ ^
+keyboards/ake160886/ake160886.h:37:7: error: type defaults to ‘int’ in declaration of ‘K96’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+       ^
+keyboards/ake160886/ake160886.h:37:13: error: type defaults to ‘int’ in declaration of ‘K97’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+             ^
+keyboards/ake160886/ake160886.h:37:19: error: type defaults to ‘int’ in declaration of ‘K98’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                   ^
+keyboards/ake160886/ake160886.h:37:25: error: type defaults to ‘int’ in declaration of ‘K99’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                         ^
+keyboards/ake160886/ake160886.h:37:31: error: type defaults to ‘int’ in declaration of ‘K100’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                               ^
+keyboards/ake160886/ake160886.h:37:37: error: type defaults to ‘int’ in declaration of ‘K101’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                     ^
+keyboards/ake160886/ake160886.h:37:43: error: type defaults to ‘int’ in declaration of ‘K102’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                           ^
+keyboards/ake160886/ake160886.h:37:49: error: type defaults to ‘int’ in declaration of ‘K103’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                 ^
+keyboards/ake160886/ake160886.h:37:55: error: type defaults to ‘int’ in declaration of ‘K104’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                       ^
+keyboards/ake160886/ake160886.h:37:61: error: type defaults to ‘int’ in declaration of ‘K105’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                             ^
+keyboards/ake160886/ake160886.h:37:67: error: type defaults to ‘int’ in declaration of ‘K106’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                   ^
+keyboards/ake160886/ake160886.h:37:73: error: type defaults to ‘int’ in declaration of ‘K107’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                         ^
+keyboards/ake160886/ake160886.h:37:79: error: type defaults to ‘int’ in declaration of ‘K108’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                               ^
+keyboards/ake160886/ake160886.h:37:85: error: type defaults to ‘int’ in declaration of ‘K109’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:37:91: error: type defaults to ‘int’ in declaration of ‘K110’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:37:97: error: type defaults to ‘int’ in declaration of ‘K111’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:37:103: error: type defaults to ‘int’ in declaration of ‘K112’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:37:109: error: type defaults to ‘int’ in declaration of ‘K113’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:37:115: error: type defaults to ‘int’ in declaration of ‘K114’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:37:121: error: type defaults to ‘int’ in declaration of ‘K115’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:37:127: error: type defaults to ‘int’ in declaration of ‘K116’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:37:133: error: type defaults to ‘int’ in declaration of ‘K117’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:37:139: error: type defaults to ‘int’ in declaration of ‘K118’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:37:145: error: type defaults to ‘int’ in declaration of ‘K119’ [-Werror=implicit-int]
+ K95,  K96,  K97,  K98,  K99,  K100, K101, K102, K103, K104, K105, K106, K107, K108, K109, K110, K111, K112, K113, K114, K115, K116, K117, K118, K119,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:38:1: error: type defaults to ‘int’ in declaration of ‘K120’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+ ^
+keyboards/ake160886/ake160886.h:38:7: error: type defaults to ‘int’ in declaration of ‘K121’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+       ^
+keyboards/ake160886/ake160886.h:38:13: error: type defaults to ‘int’ in declaration of ‘K122’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+             ^
+keyboards/ake160886/ake160886.h:38:19: error: type defaults to ‘int’ in declaration of ‘K123’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                   ^
+keyboards/ake160886/ake160886.h:38:25: error: type defaults to ‘int’ in declaration of ‘K124’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                         ^
+keyboards/ake160886/ake160886.h:38:31: error: type defaults to ‘int’ in declaration of ‘K125’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                               ^
+keyboards/ake160886/ake160886.h:38:37: error: type defaults to ‘int’ in declaration of ‘K126’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                     ^
+keyboards/ake160886/ake160886.h:38:43: error: type defaults to ‘int’ in declaration of ‘K127’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                           ^
+keyboards/ake160886/ake160886.h:38:49: error: type defaults to ‘int’ in declaration of ‘K128’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                 ^
+keyboards/ake160886/ake160886.h:38:55: error: type defaults to ‘int’ in declaration of ‘K129’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                       ^
+keyboards/ake160886/ake160886.h:38:61: error: type defaults to ‘int’ in declaration of ‘K130’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                             ^
+keyboards/ake160886/ake160886.h:38:67: error: type defaults to ‘int’ in declaration of ‘K131’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                   ^
+keyboards/ake160886/ake160886.h:38:73: error: type defaults to ‘int’ in declaration of ‘K132’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                         ^
+keyboards/ake160886/ake160886.h:38:79: error: type defaults to ‘int’ in declaration of ‘K133’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                               ^
+keyboards/ake160886/ake160886.h:38:85: error: type defaults to ‘int’ in declaration of ‘K134’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                     ^
+keyboards/ake160886/ake160886.h:38:91: error: type defaults to ‘int’ in declaration of ‘K135’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                           ^
+keyboards/ake160886/ake160886.h:38:97: error: type defaults to ‘int’ in declaration of ‘K136’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:38:103: error: type defaults to ‘int’ in declaration of ‘K137’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:38:109: error: type defaults to ‘int’ in declaration of ‘K138’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:38:115: error: type defaults to ‘int’ in declaration of ‘K139’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:38:121: error: type defaults to ‘int’ in declaration of ‘K140’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                         ^
+keyboards/ake160886/ake160886.h:38:127: error: type defaults to ‘int’ in declaration of ‘K141’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:38:133: error: type defaults to ‘int’ in declaration of ‘K142’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:38:139: error: type defaults to ‘int’ in declaration of ‘K143’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                           ^
+keyboards/ake160886/ake160886.h:38:145: error: type defaults to ‘int’ in declaration of ‘K144’ [-Werror=implicit-int]
+ K120, K121, K122, K123, K124, K125, K126, K127, K128, K129, K130, K131, K132, K133, K134, K135, K136, K137, K138, K139, K140, K141, K142, K143, K144,
+                                                                                                                                                 ^
+keyboards/ake160886/ake160886.h:39:1: error: type defaults to ‘int’ in declaration of ‘K145’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+ ^
+keyboards/ake160886/ake160886.h:39:13: error: type defaults to ‘int’ in declaration of ‘K146’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+             ^
+keyboards/ake160886/ake160886.h:39:19: error: type defaults to ‘int’ in declaration of ‘K147’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                   ^
+keyboards/ake160886/ake160886.h:39:25: error: type defaults to ‘int’ in declaration of ‘K148’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                         ^
+keyboards/ake160886/ake160886.h:39:31: error: type defaults to ‘int’ in declaration of ‘K149’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                               ^
+keyboards/ake160886/ake160886.h:39:43: error: type defaults to ‘int’ in declaration of ‘K150’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                           ^
+keyboards/ake160886/ake160886.h:39:61: error: type defaults to ‘int’ in declaration of ‘K151’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                             ^
+keyboards/ake160886/ake160886.h:39:79: error: type defaults to ‘int’ in declaration of ‘K152’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                               ^
+keyboards/ake160886/ake160886.h:39:91: error: type defaults to ‘int’ in declaration of ‘K153’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                           ^
+keyboards/ake160886/ake160886.h:39:97: error: type defaults to ‘int’ in declaration of ‘K154’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                 ^
+keyboards/ake160886/ake160886.h:39:103: error: type defaults to ‘int’ in declaration of ‘K155’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                       ^
+keyboards/ake160886/ake160886.h:39:109: error: type defaults to ‘int’ in declaration of ‘K156’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                             ^
+keyboards/ake160886/ake160886.h:39:115: error: type defaults to ‘int’ in declaration of ‘K157’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                   ^
+keyboards/ake160886/ake160886.h:39:127: error: type defaults to ‘int’ in declaration of ‘K158’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                               ^
+keyboards/ake160886/ake160886.h:39:133: error: type defaults to ‘int’ in declaration of ‘K159’ [-Werror=implicit-int]
+ K145,       K146, K147, K148, K149,       K150,             K151,             K152,       K153, K154, K155, K156, K157,       K158, K159, K160
+                                                                                                                                     ^
+keyboards/ake160886/ake160886.h:40:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+ ) { \
+ ^
+keyboards/ake160886/ake160886.c:59:9: error: implicit declaration of function ‘LAYOUT’ [-Werror=implicit-function-declaration]
+   [0] = LAYOUT( \
+         ^
+keyboards/ake160886/ake160886.c:60:5: error: ‘NO’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+     ^
+keyboards/ake160886/ake160886.c:63:35: error: ‘ESC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         BKSP, NO,   NO,         NO,   NO,   NO,   NO, 
+                                   ^
+keyboards/ake160886/ake160886.c:63:107: error: ‘BKSP’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         BKSP, NO,   NO,         NO,   NO,   NO,   NO, 
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:64:35: error: ‘TAB’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                   ^
+keyboards/ake160886/ake160886.c:64:41: error: ‘Q’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                         ^
+keyboards/ake160886/ake160886.c:64:47: error: ‘W’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                               ^
+keyboards/ake160886/ake160886.c:64:53: error: ‘E’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                     ^
+keyboards/ake160886/ake160886.c:64:59: error: ‘R’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                           ^
+keyboards/ake160886/ake160886.c:64:65: error: ‘T’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                 ^
+keyboards/ake160886/ake160886.c:64:71: error: ‘Y’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                       ^
+keyboards/ake160886/ake160886.c:64:77: error: ‘U’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                             ^
+keyboards/ake160886/ake160886.c:64:83: error: ‘I’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                   ^
+keyboards/ake160886/ake160886.c:64:89: error: ‘O’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                         ^
+keyboards/ake160886/ake160886.c:64:95: error: ‘P’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                               ^
+keyboards/ake160886/ake160886.c:64:101: error: ‘LBRC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:64:107: error: ‘RBRC’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO, 
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:65:35: error: ‘CAPS’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                   ^
+keyboards/ake160886/ake160886.c:65:41: error: ‘A’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                         ^
+keyboards/ake160886/ake160886.c:65:47: error: ‘S’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                               ^
+keyboards/ake160886/ake160886.c:65:53: error: ‘D’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                     ^
+keyboards/ake160886/ake160886.c:65:59: error: ‘F’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                           ^
+keyboards/ake160886/ake160886.c:65:65: error: ‘G’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                 ^
+keyboards/ake160886/ake160886.c:65:71: error: ‘H’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                       ^
+keyboards/ake160886/ake160886.c:65:77: error: ‘J’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                             ^
+keyboards/ake160886/ake160886.c:65:83: error: ‘K’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                   ^
+keyboards/ake160886/ake160886.c:65:89: error: ‘L’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                         ^
+keyboards/ake160886/ake160886.c:65:95: error: ‘SCLN’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                               ^
+keyboards/ake160886/ake160886.c:65:101: error: ‘QUOT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:65:113: error: ‘ENT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                                 ^
+keyboards/ake160886/ake160886.c:66:35: error: ‘LSFT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                   ^
+keyboards/ake160886/ake160886.c:66:47: error: ‘Z’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                               ^
+keyboards/ake160886/ake160886.c:66:53: error: ‘X’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                     ^
+keyboards/ake160886/ake160886.c:66:59: error: ‘C’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                           ^
+keyboards/ake160886/ake160886.c:66:65: error: ‘V’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                 ^
+keyboards/ake160886/ake160886.c:66:71: error: ‘B’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                       ^
+keyboards/ake160886/ake160886.c:66:77: error: ‘N’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                             ^
+keyboards/ake160886/ake160886.c:66:83: error: ‘M’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                   ^
+keyboards/ake160886/ake160886.c:66:89: error: ‘COMM’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                         ^
+keyboards/ake160886/ake160886.c:66:95: error: ‘DOT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                               ^
+keyboards/ake160886/ake160886.c:66:101: error: ‘SLSH’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:66:113: error: ‘RSFT’ undeclared here (not in a function)
+     NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,  
+                                                                                                                 ^
+keyboards/ake160886/ake160886.c:67:35: error: ‘LCTL’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                   ^
+keyboards/ake160886/ake160886.c:67:41: error: ‘LWIN’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                         ^
+keyboards/ake160886/ake160886.c:67:59: error: ‘LALT’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                           ^
+keyboards/ake160886/ake160886.c:67:77: error: ‘SPC’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                             ^
+keyboards/ake160886/ake160886.c:67:89: error: ‘RALT’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                         ^
+keyboards/ake160886/ake160886.c:67:101: error: ‘APP’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                                     ^
+keyboards/ake160886/ake160886.c:67:107: error: ‘RCTL’ undeclared here (not in a function)
+     NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+                                                                                                           ^
+keyboards/ake160886/ake160886.c:68:4: error: expected ‘}’ before ‘;’ token
+   );
+    ^
+keyboards/ake160886/ake160886.c:69:1: error: expected ‘,’ or ‘;’ at end of input
+ }
+ ^
+cc1: all warnings being treated as errors
+make[1]: *** [tmk_core/rules.mk:386: .build/obj_ake160886_default/keyboards/ake160886/ake160886.o] Error 1
+make: *** [Makefile:584: ake160886:default] Error 1
