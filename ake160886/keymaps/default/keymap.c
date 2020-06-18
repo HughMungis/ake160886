@@ -1,4 +1,4 @@
-/* Copyright 2020 HughMungis
+/* Copyright 2020 Hugh Mungis
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,63 +14,53 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
+#include "ake160886.h"
+// in keyboard.c
+// You could technically add more layers if 160 keys are not enough
+// This is me trying to make a normal-ish layout in the middle of the keyboard, leaving the rest unassigned
+// Going to need a wiiiide editor window for this to look readable
+// Available keycodes are at https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
+const uint16_t PROGMEM keymaps[] [MATRIX_ROWS][MATRIX_COLS] = {
+  [0] = LAYOUT( \
+    NO,         NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,
+    NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,
 
-// Defines names for use in layer keycodes and the keymap
-enum layer_names {
-    _BASE,
-    _FN
-};
+    NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         NO, NO,   NO,         NO,   NO,   NO,   NO,
+    NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO,
+    NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,
+    NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,
+    NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO
+  )};
 
-// Defines the keycodes used by our macros in process_record_user
-enum custom_keycodes {
-    QMKBEST = SAFE_RANGE,
-    QMKURL
-};
-
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /* Base */
-    [_BASE] = LAYOUT(
-        KC_A,    KC_1,    MO(_FN),
-            KC_TAB,   KC_SPC
-    ),
-    [_FN] = LAYOUT(
-        QMKBEST, QMKURL,  _______,
-            RESET,    XXXXXXX
-    )
-};
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case QMKBEST:
-            if (record->event.pressed) {
-                // when keycode QMKBEST is pressed
-                SEND_STRING("QMK is the best thing ever!");
-            } else {
-                // when keycode QMKBEST is released
-            }
-            break;
-        case QMKURL:
-            if (record->event.pressed) {
-                // when keycode QMKURL is pressed
-                SEND_STRING("https://qmk.fm/\n");
-            } else {
-                // when keycode QMKURL is released
-            }
-            break;
-    }
-    return true;
-}
+// Optional override functions below.
+// You can leave any or all of these undefined.
+// These are only required if you want to perform custom actions.
 
 /*
-void matrix_init_user(void) {
+void matrix_init_kb(void) {
+    // put your keyboard start-up code here
+    // runs once when the firmware starts up
 
+    matrix_init_user();
 }
 
-void matrix_scan_user(void) {
+void matrix_scan_kb(void) {
+    // put your looping keyboard code here
+    // runs every cycle (a lot)
 
+    matrix_scan_user();
 }
 
-bool led_update_user(led_t led_state) {
-    return true;
+bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
+    // put your per-action keyboard code here
+    // runs for every action, just before processing by the firmware
+
+    return process_record_user(keycode, record);
+}
+
+bool led_update_kb(led_t led_state) {
+    // put your keyboard LED indicator (ex: Caps Lock LED) toggling code here
+
+    return led_update_user(led_state);
 }
 */

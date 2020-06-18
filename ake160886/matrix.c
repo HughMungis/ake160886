@@ -1,4 +1,3 @@
-// in matrix.c
 // could probably be just 1us, but let's start here
 #define CLOCK_WAIT_US 3
 #define CLOCK_PIN D7
@@ -30,12 +29,12 @@ void matrix_init_custom(void) {
   // enable once these pins have 220 or 470 ohm resistors inline
   // writePinLow(); to turn on LED if I have it right
   #if 0
-  setPinOutput(K24_LED_PIN);
-  writePinHigh(K24_LED_PIN);
-  setPinOutput(K25_LED_PIN);
-  writePinHigh(K25_LED_PIN);
-  setPinOutput(K28_LED_PIN);
-  writePinHigh(K28_LED_PIN);
+	  setPinOutput(K24_LED_PIN);
+	  writePinHigh(K24_LED_PIN);
+	  setPinOutput(K25_LED_PIN);
+	  writePinHigh(K25_LED_PIN);
+	  setPinOutput(K28_LED_PIN);
+	  writePinHigh(K28_LED_PIN);
   #endif
 }
 
@@ -60,7 +59,7 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
   writePinHigh(DATA_PIN);
   writePinLow(CLOCK_PIN);
   wait_us(CLOCK_WAIT_US);
-  
+
   for (uint8_t current_row = 0; current_row < MATRIX_ROWS; current_row++) {
     // read whole row, set flag if different from value for current row
     matrix_row_t new_row_value = read_cols;
@@ -74,4 +73,3 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
 
   return matrix_has_changed;
 }
-
