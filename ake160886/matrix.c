@@ -62,8 +62,9 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
 
   for (uint8_t current_row = 0; current_row < MATRIX_ROWS; current_row++) {
     // read whole row, set flag if different from value for current row
-    matrix_row_t new_row_value = read_cols;
+    matrix_row_t new_row_value = read_cols();
     matrix_has_changed |= (new_row_value != current_matrix[current_row]);
+    current_matrix[current_row] = new_row_value;
     // Tick the clock once to move the 0 to the next row
     writePinHigh(CLOCK_PIN);
     wait_us(CLOCK_WAIT_US);
