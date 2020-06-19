@@ -1,7 +1,10 @@
+#include QMK_KEYBOARD_H
+#include "config.h"
+
 // could probably be just 1us, but let's start here
 #define CLOCK_WAIT_US 3
 #define CLOCK_PIN D7
-#define DATA_PIN F7
+#define DATA_PIN B4
 static uint8_t const column_pins[] = { F0, F1, F4, F5, F6, F7, B6, B5 };
 #define K24_LED_PIN D3
 #define K25_LED_PIN C6
@@ -38,7 +41,7 @@ void matrix_init_custom(void) {
   #endif
 }
 
-static matrix_row_t read_cols() {
+static matrix_row_t read_cols(void) {
   // Could be made faster by using the input registers but
   // let's be sure it works and is easy to read first
   matrix_row_t row = 0;
