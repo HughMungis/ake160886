@@ -11,6 +11,7 @@ static uint8_t const column_pins[] = { F0, F1, F4, F5, F6, F7, B6, B5 };
 #define K28_LED_PIN C7
 
 void matrix_init_custom(void) {
+  xprintf("matrix_init_custom() called");
   setPinOutput(DATA_PIN);
   setPinOutput(CLOCK_PIN);
   

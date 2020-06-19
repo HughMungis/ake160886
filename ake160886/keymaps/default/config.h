@@ -17,3 +17,6 @@
 #pragma once
 
 // place overrides here
+
+// Console output
+#define DEBUG_MATRIX_SCAN_RATE
