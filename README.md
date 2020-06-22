@@ -15,7 +15,7 @@ Pin 12 (grey wire) should actually be soldered in to the VCC hole opposite the U
 
 ![Teensy as seen from GND side](https://i.imgur.com/4Dmncby.jpg)
 
-!{Teensy as seen from VCC side](https://i.imgur.com/m8e5wii.jpg)
+![Teensy as seen from VCC side](https://i.imgur.com/m8e5wii.jpg)
 
 https://imgur.com/gallery/vZbpR2K
 
