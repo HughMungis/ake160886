@@ -5,6 +5,7 @@ First thing you want to do is take off the case, unscrew the daughterboard, and 
 The daughterboard isn't used from this point on. All pictures are of the top part of the main PCB that was hidden by the daughterboard and the teensy.
 
 Jumpers on the motherboard
+Pin0 is on the far left. I don't know what the last 4 holes on the right are used for.
 
 ![Jumpers on the motherboard](https://i.imgur.com/iwAAsR8.jpg)
 
