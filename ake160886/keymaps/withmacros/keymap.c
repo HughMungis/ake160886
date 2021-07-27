@@ -51,8 +51,8 @@ enum custom_keycodes {
     KC_BTC,
     KC_NMAP,
     KC_DIRB,
-    KC_COPY,
-    KC_PSTE
+    KC_CPY,
+    KC_PSTA
 };
 
 const uint16_t PROGMEM keymaps[] [MATRIX_ROWS][MATRIX_COLS] = {
@@ -60,11 +60,11 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS][MATRIX_COLS] = {
     KC_MSEL,        KC_MPLY,KC_MUTE,  KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,  KC_F7,KC_F8,KC_F9,KC_F10,	  KC_F11,KC_F12,KC_NO,KC_NO,						KC_BRIU,   KC_NO,   KC_NO,   	 KC_NO,   KC_NO,   KC_NO,KC_WAKE,
     KC_MPRV,KC_MNXT,KC_VOLD,KC_VOLU,  KC_1, KC_2, KC_3, KC_4, KC_5, KC_6,   KC_7, KC_8, KC_9, KC_0, 	  KC_NO,    KC_NO,    KC_NO,KC_NO,  					KC_BRID,   KC_NO,   KC_NO,   	 KC_PWR,  KC_BTC,  KC_NO,KC_SLEP,
 
-    AF1,    AF2,    AF3,    AF4,      KC_ESC,  KC_COPY, KC_PSTE, KC_HOME, KC_END,  KC_PGUP, KC_PGDOWN,   KC_NO,   KC_NO,   KC_NO, 							KC_WHOM,KC_WSCH,      	 	 KC_NLCK, KC_NO,	     KC_NO,   	KC_PSLS,
+    AF1,    AF2,    AF3,    AF4,      KC_ESC,  KC_CPY, KC_PSTA, KC_HOME, KC_END,  KC_PGUP, KC_PGDOWN,   KC_NO,   KC_NO,   KC_NO, 							KC_WHOM,KC_WSCH,      	 	 KC_NLCK, KC_NO,	     KC_NO,   	KC_PSLS,
     AF5,    AF6,    AF7,    AF8,      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_NO,  		KC_WBAK,KC_UP,KC_WFWD,	 	 KC_KP_7, KC_KP_8,   KC_KP_9,   KC_KP_ASTERISK,
     AF9,    AF10,   AF11,   AF12,     KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_NO,KC_ENT, 		KC_LEFT,KC_DOWN,KC_RGHT, 	 KC_KP_4, KC_KP_5,   KC_KP_6,   KC_KP_MINUS,
     KC_NMAP,KC_DIRB,KC_NO,  KC_FNCY,     KC_LSFT, KC_NO ,     KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,KC_GRAVE,KC_RSFT,  		KC_NO, 	KC_WFAV,KC_NO,	 	 KC_KP_1, KC_KP_2,   KC_KP_3,   KC_KP_PLUS,
-    KC_NO,     KC_NO,    KC_NO,   	      KC_LCTL, KC_LWIN,      LALT,            SPC,        RALT, KC_RWIN,   KC_NO,  RCTL,     						KC_NO,   	KC_NO,   		 KC_KP_0,   KC_NO,   KC_NO
+    KC_NO,     KC_NO,    KC_NO,   	      KC_LCTL, KC_LWIN,      KC_LALT,        KC_SPC,      KC_RALT, KC_RWIN,   KC_NO,  KC_RCTL,     						KC_NO,   	KC_NO,   		 KC_KP_0,   KC_NO,   KC_NO
   )};
 
 // Optional override functions below.
@@ -137,13 +137,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
         
-    case KC_COPY:
+    case KC_CPY:
         if (record->event.pressed) {
            SEND_STRING(SS_LCTL(SS_TAP(X_INS))); // ctrl + ins
         }
         break;
 
-    case KC_PSTE:
+    case KC_PSTA:
         if (record->event.pressed) {
            SEND_STRING(SS_LSFT(SS_TAP(X_INS))); // shift + ins
         }
