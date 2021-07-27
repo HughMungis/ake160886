@@ -46,13 +46,13 @@
 // Going to need a wiiiide editor window for this to look readable
 // Available keycodes are at https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 enum custom_keycodes {
-    FSH = SAFE_RANGE,
-    FNCY,
-    BTC,
-    NMAP,
-    DIRB,
-    COPY,
-    PSTE
+    KC_FSH = SAFE_RANGE,
+    KC_FNCY,
+    KC_BTC,
+    KC_NMAP,
+    KC_DIRB,
+    KC_COPY,
+    KC_PSTE
 };
 
 const uint16_t PROGMEM keymaps[] [MATRIX_ROWS][MATRIX_COLS] = {
