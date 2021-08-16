@@ -119,7 +119,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case KC_BTC:
         if (record->event.pressed) {
             // when keycode BTC is pressed
-            SEND_STRING("1EHmij4VnP3j8pFfi4AksnG7RYUyBMdrEF");
+            SEND_STRING("1QE17rcGM9V784N15dyyxEjGBzcFSVEisn");
         }
         break;
 
