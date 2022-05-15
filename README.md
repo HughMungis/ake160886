@@ -8,6 +8,8 @@ Jumpers on the motherboard
 Pin0 is on the far left. I don't know what the last 4 holes on the right are used for.
 
 ![Jumpers on the motherboard](https://i.imgur.com/iwAAsR8.jpg)
+![TugBf0N](https://user-images.githubusercontent.com/66029505/168475624-74d79c09-8310-4b37-918a-b58808490a78.jpg)
+
 
 Pin 12 (grey wire) should actually be soldered in to the VCC hole opposite the USB connector. Also, pins 13-15 are just for the built in LEDs, so you'll want to go through a 220 ohm or 470 ohm resistor so they don't burn out the corresponding diodes.
 
