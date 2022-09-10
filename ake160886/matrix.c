@@ -1,14 +1,15 @@
 #include QMK_KEYBOARD_H
 #include "config.h"
+#include "gpio.h"
 
 // could probably be just 1us, but let's start here
 #define CLOCK_WAIT_US 3
-#define CLOCK_PIN D7
-#define DATA_PIN B4
-static uint8_t const column_pins[] = { F0, F1, F4, F5, F6, F7, B6, B5 };
-#define K24_LED_PIN D3
-#define K25_LED_PIN C6
-#define K28_LED_PIN C7
+#define CLOCK_PIN GP9
+#define DATA_PIN GP8
+static uint8_t const column_pins[] = {GP0, GP1, GP2, GP3, GP4, GP5, GP6, GP7};
+//#define K24_LED_PIN D3
+//#define K25_LED_PIN C6
+//#define K28_LED_PIN C7
 
 void matrix_init_custom(void) {
   xprintf("matrix_init_custom() called");
