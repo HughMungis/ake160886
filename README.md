@@ -12,7 +12,7 @@ Pin0 is on the far left. I don't know what the last 4 holes on the right are use
 
 Pin 12 (grey wire) should actually be soldered in to the VCC hole opposite the USB connector. Also, pins 13-15 are just for the built in LEDs, so you'll want to go through a 220 ohm or 470 ohm resistor so they don't burn out the corresponding diodes.
 
-![Pinout of Teensy](https://i.imgur.com/eO2G1nD.png)
+![Pinout of KB2040](https://cdn-learn.adafruit.com/assets/assets/000/106/984/original/adafruit_products_Adafruit_KB2040_Pinout.png?1638564074)
 
 ![Teensy as seen from GND side](https://i.imgur.com/4Dmncby.jpg)
 
