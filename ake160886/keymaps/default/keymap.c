@@ -15,6 +15,13 @@
  */
 #include QMK_KEYBOARD_H
 #include "ake160886.h"
+//YOUR MACROS MUST BE ENUMERATED HERE BEFORE YOU CAN USE THEM
+enum custom_keycodes {
+    QMKBEST = SAFE_RANGE,
+    QMKURL,
+    MY_OTHER_MACRO,
+};
+
 // in keyboard.c
 // You could technically add more layers if 160 keys are not enough
 // This is me trying to make a normal-ish layout in the middle of the keyboard, leaving the rest unassigned
@@ -22,15 +29,14 @@
 // Available keycodes are at https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 const uint16_t PROGMEM keymaps[] [MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT( \
-    NO,         NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,
-    NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,
+    KC_NO,            KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
 
-    NO,   NO,   NO,   NO,   NO,   ESC,        NO,         NO,         NO,   NO,   NO,   NO,   NO,         NO, NO,   NO,         NO,   NO,   NO,   NO,
-    NO,   NO,   NO,   NO,   NO,   TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, NO,   NO,   NO,   NO,   NO,   NO,   NO,
-    NO,   NO,   NO,   NO,   NO,   CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NO,   ENT,  NO,   NO,   NO,   NO,   NO,   NO,
-    NO,   NO,   NO,   NO,   NO,   LSFT, NO,   Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, NO,   RSFT, NO,   NO,   NO,   NO,   NO,   NO,
-    NO,         NO,   NO,   NO,   LCTL, LWIN,             LALT,             SPC,        RALT, NO,   APP,  RCTL, NO,         NO,   NO,   NO,   NO,
-  )};
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_ESC,  KC_NO,         KC_NO,         KC_NO,       KC_NO,       KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,    KC_NO,            KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_NO,    KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_NO,    KC_ENT,  KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_LSFT, KC_NO,   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_NO,    KC_RSFT, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    KC_NO,            KC_NO,   KC_NO,    KC_NO,   KC_LCTL, KC_LWIN,             KC_LALT,             KC_SPC,        KC_RALT, KC_NO,   KC_APP,                           KC_RCTL,          KC_NO,    KC_NO,   KC_NO,   KC_NO       )};
 
 // Optional override functions below.
 // You can leave any or all of these undefined.
