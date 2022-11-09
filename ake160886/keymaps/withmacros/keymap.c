@@ -64,6 +64,9 @@ enum custom_keycodes {
     PS42,
     PS43,
     PS44,
+    PS45,
+    PS46,
+    AD01,
 };
 
 // in keyboard.c
@@ -405,6 +408,121 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
            SEND_STRING("Send-MailMessage -SmtpServer <smtp-server> -To joe@example.com -From sender@example.com -Subject \"subject\" -Body \"message\" -Attachment c:\path\\to\attachment"); 
         }
         break;
+
+    case PS45: // b64 encode
+        if (record->event.pressed) {
+           SEND_STRING("[System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(\"Text to encode\"))"); 
+        }
+        break;
+                       
+    case PS46: // b64 decode
+        if (record->event.pressed) {
+           SEND_STRING("[System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String(\"<base64 string here>\"))"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD02: // List DCs
+        if (record->event.pressed) {
+           SEND_STRING("[System.DirectoryServices.ActiveDirectory.Domain]::GetComputerDomain().DomainControllers | select IPAddress"); 
+        }
+        break;
+                       
+    case AD03: // List users from AD
+        if (record->event.pressed) {
+           SEND_STRING("$a = [adsisearcher]\”(&(objectCategory=person)(objectClass=user))\”; $a.PropertiesToLoad.add(\“samaccountname\”) | out-null; $a.PageSize = 1; $a.FindAll() | % { echo $_.properties.samaccountname } > users.txt"); 
+        }
+        break;
+                       
+    case AD04: // List computers from AD
+        if (record->event.pressed) {
+           SEND_STRING("$a = [adsisearcher]\”(objectCategory=computer)\”; $a.PropertiesToLoad.add(\“dnshostname\”) | out-null; $a.PageSize = 1; $a.FindAll() | % { echo $_.properties.dnshostname } > computers.txt"); 
+        }
+        break;
+                       
+    case AD05: // Get AD password policy
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.minPwdLength; ([adsisearcher]\"\").Searchroot.lockoutThreshold; ([adsisearcher]\"\").Searchroot.lockoutDuration; ([adsisearcher]\"\").Searchroot.lockoutObservationWindow; ([adsisearcher]\"\").Searchroot.pwdHistoryLength; ([adsisearcher]\"\").Searchroot.minPwdAge; ([adsisearcher]\"\").Searchroot.maxPwdAge; ([adsisearcher]\"\").Searchroot.pwdProperties"); 
+        }
+        break;
+                       
+    case AD06: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("pushd \\\\example.com\\sysvol; gci * -Include *.xml -Recurse -EA SilentlyContinue | select-string cpassword; popd"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+                       
+    case AD01: // Get current AD domain
+        if (record->event.pressed) {
+           SEND_STRING("([adsisearcher]\"\").Searchroot.path"); 
+        }
+        break;
+
 
     }
     return true;
